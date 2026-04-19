@@ -80,7 +80,9 @@ scent-aura-mern/
 
 ```
 
-## 👤 Author
+## 👤 About Developer
+
+### Shreyash Desai
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23121011.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://shreyashdesai09.github.io)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shreyash-desai-886979237/)
