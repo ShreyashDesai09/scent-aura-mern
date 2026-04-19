@@ -30,34 +30,40 @@ Navigate to the server directory and install dependencies:
 ```bash
 cd server
 npm install
+```
 
 Seed the database with the luxury perfume collection:
-Bash
-
+```bash
 node seed.js
+```
 
 Start the server:
-Bash
 
+```bash
 npm start
+```
 
-The backend will run on: http://localhost:5000
-3. Frontend Setup
+`*The backend will run on: http://localhost:5000*`
+
+### 3. Frontend Setup
 
 Navigate to the client directory and install dependencies:
-Bash
 
+```bash
 cd client
 npm install
-
+```
 Start the development server:
-Bash
 
+```bash
 npm run dev
+```
 
-The application will be available at: http://localhost:5173
-📂 Project Structure
-Plaintext
+`*The application will be available at: http://localhost:5173 *`
+
+## 📂 Project Structure
+
+```bash
 
 scent-aura-mern/
 ├── client/                 # React frontend
@@ -72,7 +78,9 @@ scent-aura-mern/
 │   └── server.js           # API Routes & Connection
 └── README.md
 
-👤 Author
+```
+
+## 👤 Author
 
 Shreyash Desai
 Software Developer & Electronics Engineer
