@@ -82,8 +82,8 @@ scent-aura-mern/
 
 ## 👤 Author
 
-Shreyash Desai
-Software Developer & Electronics Engineer
-Sunbeam Infotech - PG-DAC 2026
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23121011.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://shreyashdesai09.github.io)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shreyash-desai-886979237/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ShreyashDesai09)
 
 Note: This project is a demonstration of MERN stack capabilities for academic assessment purposes.
