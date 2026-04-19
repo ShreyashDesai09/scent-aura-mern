@@ -1,0 +1,20 @@
+{
+  "name": "scent-aura-mern-backend",
+  "version": "1.0.0",
+  "description": "scent-aura-mern-backend server Node.js",
+  "homepage": "https://github.com/ShreyashDesai09/scent-aura-mern#readme",
+  "bugs": {
+    "url": "https://github.com/ShreyashDesai09/scent-aura-mern/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShreyashDesai09/scent-aura-mern.git"
+  },
+  "license": "ISC",
+  "author": "ShreyashDesai09",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
