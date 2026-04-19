@@ -5,7 +5,9 @@ function Footer() {
 
     <>
 
-        <h3>JUST A DEMO NO OFFICIAL CONTENT IN THIS FOOTER CONTACT : shreyashdesai31796@gmail.com for querry or feedback <hr /> THANK YOU !!!! </h3>
+        <div className="demo-disclaimer">
+            <p>Demo Project: No official content. Contact: shreyashdesai31796@gmail.com</p>
+        </div>
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-section">
