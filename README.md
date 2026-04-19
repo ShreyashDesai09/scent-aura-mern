@@ -43,7 +43,7 @@ Start the server:
 npm start
 ```
 
-`*The backend will run on: http://localhost:5000*`
+` The backend will run on: http://localhost:5000 `
 
 ### 3. Frontend Setup
 
@@ -59,7 +59,7 @@ Start the development server:
 npm run dev
 ```
 
-`*The application will be available at: http://localhost:5173 *`
+` The application will be available at: http://localhost:5173 `
 
 ## 📂 Project Structure
 
