@@ -40,7 +40,6 @@ app.get('/products/:id' , async  (req,res) => {
     }
 });
 
-// server.js
 app.post('/products/:id/reviews', async (req, res) => {
     try {
         const { user, rating, comment } = req.body;

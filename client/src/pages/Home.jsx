@@ -8,7 +8,6 @@ function Home() {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        // Fetching from your custom server route
         axios.get('http://localhost:5000/products')
             .then(res => {
                 setProducts(res.data);

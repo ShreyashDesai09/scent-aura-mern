@@ -13,7 +13,7 @@ function ProductDetail() {
     const [comment, setComment] = useState('')
   
     useEffect(() => {
-        window.scrollTo(0, 0); // Add this line to reset scroll position
+        window.scrollTo(0, 0); 
         axios.get(`http://localhost:5000/products/${id}`)
             .then(res => {
                 setProduct(res.data);

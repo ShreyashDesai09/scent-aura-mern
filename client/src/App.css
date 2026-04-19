@@ -1,4 +1,3 @@
-/* Container for the entire application to ensure smooth transitions */
 .app-container {
   min-height: 100vh;
   display: flex;
@@ -6,12 +5,10 @@
   animation: fadeIn 0.8s ease-in;
 }
 
-/* Ensure the main content takes up enough space so footer stays at bottom */
 main {
   flex: 1;
 }
 
-/* Smooth Fade-in effect when switching pages */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -23,7 +20,6 @@ main {
   }
 }
 
-/* Custom Scrollbar for a luxury feel */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -33,7 +29,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c5a059; /* Gold scrollbar */
+  background: #c5a059; 
   border-radius: 10px;
 }
 
@@ -41,14 +37,12 @@ main {
   background: #a38446;
 }
 
-/* Utility Class for centered containers */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Selection color (Gold when user highlights text) */
 ::selection {
   background: #c5a059;
   color: white;
