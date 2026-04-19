@@ -13,6 +13,7 @@ function ProductDetail() {
     const [comment, setComment] = useState('')
   
     useEffect(() => {
+        window.scrollTo(0, 0); // Add this line to reset scroll position
         axios.get(`http://localhost:5000/products/${id}`)
             .then(res => {
                 setProduct(res.data);
@@ -25,29 +26,29 @@ function ProductDetail() {
     }, [id]);
 
     const handleReviewSubmit = async (e) => {
-        e.preventDefault();
+    e.preventDefault();
+    try {
+        const reviewObj = { 
+            user: userName, 
+            rating: rating, 
+            comment: comment 
+        };
         
-        try {
-            const reviewObj = { user: userName, rating, comment };
-            
-            await axios.post(`http://localhost:5000/products/${id}/reviews`, reviewObj);
+        await axios.post(`http://localhost:5000/products/${id}/reviews`, reviewObj);
 
-            setProduct(prev => ({
-                ...prev,
-                reviews: [...prev.reviews, reviewObj]
-            }));
+        setProduct(prev => ({
+            ...prev,
+            reviews: [...prev.reviews, reviewObj]
+        }));
 
-            alert("REVIEW SUBMITTED SUCCESSFULLY");
-            
-            setUserName('');
-            setRating(5);
-            setComment('');
-        }
-        catch (err) {
-            console.error("Error Submitting Review", err);
-            alert("Failed to submit review. Please try again.");
-        }
-    };
+        alert("Review submitted!");
+        setUserName('');
+        setComment('');
+    } catch (err) {
+        console.error(err);
+        alert("Failed to submit. Check if backend is running.");
+    }
+};
 
     if (loading) return <div className="loader">Unveiling The Scent...</div>
     if (!product) return <div className="container">Product not found. <Link to="/">Return Home</Link></div>

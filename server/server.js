@@ -40,25 +40,23 @@ app.get('/products/:id' , async  (req,res) => {
     }
 });
 
-app.post('/products/:id/review' , async(req,res) => {
-    try{
-        const {user , rating , comment} = req.body;
-        const productReview = await Product.findById(req.params.id);
+// server.js
+app.post('/products/:id/reviews', async (req, res) => {
+    try {
+        const { user, rating, comment } = req.body;
+        const product = await Product.findById(req.params.id);
         
-        if(!productReview)
-            return res.status(404).json({message : 'PRODUCT REVIEW NOT FOUND'});
-        
-        const newReview = {user , rating , comment};
-        productReview.reviews.push(newReview);
+        if (!product) return res.status(404).send("Product not found");
 
-        await productReview.save();
-        res.json({message : "REVIEW ADDED SUCCESSFULLY" , review : newReview});
+        const newReview = { user, rating: Number(rating), comment };
+        product.reviews.push(newReview);
+        
+        await product.save();
+        res.status(201).json(newReview);
+    } catch (err) {
+        res.status(500).send("Server Error");
     }
-    catch(err)
-    {
-        res.status(500).json({message: "ERROR ADDING REVIEW TO PRODUCT | NO SUCH PRODUCT FOR ADDING REVIEW" , error : err.message});
-    }
-})
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT , () => {
